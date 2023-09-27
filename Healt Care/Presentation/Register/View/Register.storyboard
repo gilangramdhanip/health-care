@@ -201,7 +201,7 @@
                                                             <constraint firstAttribute="height" constant="40" id="bEB-by-iaK"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
                                                                 <real key="value" value="24"/>
@@ -229,7 +229,7 @@
                                                             <constraint firstAttribute="height" constant="40" id="WeD-8a-jBw"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
                                                                 <real key="value" value="24"/>
