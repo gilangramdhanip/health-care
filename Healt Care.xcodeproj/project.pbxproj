@@ -1,0 +1,844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C01173D12AC0055300FA490F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01173D02AC0055300FA490F /* AppDelegate.swift */; };
+		C01173D32AC0055300FA490F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01173D22AC0055300FA490F /* SceneDelegate.swift */; };
+		C01173D52AC0055300FA490F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01173D42AC0055300FA490F /* ViewController.swift */; };
+		C01173DA2AC0055500FA490F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01173D92AC0055500FA490F /* Assets.xcassets */; };
+		C01173DD2AC0055500FA490F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01173DB2AC0055500FA490F /* LaunchScreen.storyboard */; };
+		C01173F02AC0062600FA490F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01173EF2AC0062600FA490F /* LoginViewController.swift */; };
+		C01173F22AC0063500FA490F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01173F12AC0063500FA490F /* Login.storyboard */; };
+		C01173F72AC01F0100FA490F /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01173F62AC01F0100FA490F /* Register.storyboard */; };
+		C01173F92AC01F2D00FA490F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01173F82AC01F2D00FA490F /* RegisterViewController.swift */; };
+		C01173FC2AC021F300FA490F /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01173FB2AC021F300FA490F /* UIStoryboardExtension.swift */; };
+		C01174002AC02E8700FA490F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01173FF2AC02E8700FA490F /* HomeViewController.swift */; };
+		C01174022AC02E9000FA490F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01174012AC02E9000FA490F /* Home.storyboard */; };
+		C020BAFA2AC0866A00591D17 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020BAF92AC0866A00591D17 /* HomeViewModel.swift */; };
+		C020BAFC2AC0873A00591D17 /* ProductCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020BAFB2AC0873A00591D17 /* ProductCategories.swift */; };
+		C020BAFE2AC0876100591D17 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020BAFD2AC0876100591D17 /* Product.swift */; };
+		C020BB002AC0883300591D17 /* ServiceCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020BAFF2AC0883300591D17 /* ServiceCategories.swift */; };
+		C020BB022AC0885A00591D17 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020BB012AC0885A00591D17 /* Service.swift */; };
+		C020BB0A2AC0895900591D17 /* ProductCategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020BB092AC0895900591D17 /* ProductCategoriesCollectionViewCell.swift */; };
+		C020BB0C2AC0896B00591D17 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020BB0B2AC0896B00591D17 /* ProductCollectionViewCell.swift */; };
+		C020BB0E2AC0898300591D17 /* ServiceCategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020BB0D2AC0898300591D17 /* ServiceCategoriesCollectionViewCell.swift */; };
+		C020BB102AC0898F00591D17 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020BB0F2AC0898F00591D17 /* ServiceTableViewCell.swift */; };
+		C020BB142AC08AF400591D17 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C020BB132AC08AF400591D17 /* Profile.storyboard */; };
+		C020BB162AC0982200591D17 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020BB152AC0982200591D17 /* ProfileViewController.swift */; };
+		C020BB182AC09D7D00591D17 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020BB172AC09D7D00591D17 /* UIViewExtension.swift */; };
+		C020BB1A2AC0A86E00591D17 /* UITextFieldDesignableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020BB192AC0A86E00591D17 /* UITextFieldDesignableExtension.swift */; };
+		C020BB1E2AC0B27D00591D17 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020BB1D2AC0B27D00591D17 /* UIColorExtension.swift */; };
+		C020BB242AC0B44200591D17 /* Gilroy-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C020BB232AC0B41F00591D17 /* Gilroy-Light.otf */; };
+		C020BB252AC0B44400591D17 /* Gilroy-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C020BB222AC0B41F00591D17 /* Gilroy-ExtraBold.otf */; };
+		C05C86362AC119700040D850 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05C86352AC119700040D850 /* LoginViewModel.swift */; };
+		C05C86382AC119F30040D850 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05C86372AC119F30040D850 /* ApiService.swift */; };
+		C05C863A2AC11EC90040D850 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05C86392AC11EC90040D850 /* Login.swift */; };
+		C05C863F2AC138350040D850 /* Credentials.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C05C863D2AC138350040D850 /* Credentials.xcdatamodeld */; };
+		C05C86412AC138890040D850 /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05C86402AC138890040D850 /* PersistanceManager.swift */; };
+		C05C86432AC13C3D0040D850 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05C86422AC13C3D0040D850 /* Credential.swift */; };
+		C05C86472AC166120040D850 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05C86462AC166120040D850 /* ErrorMessage.swift */; };
+		C09262B42AC293C600D6A921 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C09262B32AC293C600D6A921 /* Menu.storyboard */; };
+		C09262B62AC293D000D6A921 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09262B52AC293D000D6A921 /* MenuViewController.swift */; };
+		C0C47E932AC3F6D100C86E34 /* ProductCategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C47E922AC3F6D100C86E34 /* ProductCategoriesTableViewCell.swift */; };
+		C0C47E952AC3F71A00C86E34 /* ProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C47E942AC3F71A00C86E34 /* ProductsTableViewCell.swift */; };
+		C0C47E972AC404B400C86E34 /* ServiceCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C47E962AC404B400C86E34 /* ServiceCategoryTableViewCell.swift */; };
+		C0C47E992AC405D100C86E34 /* ServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C47E982AC405D100C86E34 /* ServiceCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C01173CD2AC0055300FA490F /* Healt Care.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Healt Care.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C01173D02AC0055300FA490F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C01173D22AC0055300FA490F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C01173D42AC0055300FA490F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C01173D92AC0055500FA490F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C01173DC2AC0055500FA490F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C01173DE2AC0055500FA490F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C01173EF2AC0062600FA490F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C01173F12AC0063500FA490F /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		C01173F62AC01F0100FA490F /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		C01173F82AC01F2D00FA490F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C01173FB2AC021F300FA490F /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		C01173FF2AC02E8700FA490F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C01174012AC02E9000FA490F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		C020BAF92AC0866A00591D17 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C020BAFB2AC0873A00591D17 /* ProductCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategories.swift; sourceTree = "<group>"; };
+		C020BAFD2AC0876100591D17 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		C020BAFF2AC0883300591D17 /* ServiceCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategories.swift; sourceTree = "<group>"; };
+		C020BB012AC0885A00591D17 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		C020BB092AC0895900591D17 /* ProductCategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		C020BB0B2AC0896B00591D17 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		C020BB0D2AC0898300591D17 /* ServiceCategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		C020BB0F2AC0898F00591D17 /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
+		C020BB132AC08AF400591D17 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		C020BB152AC0982200591D17 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C020BB172AC09D7D00591D17 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		C020BB192AC0A86E00591D17 /* UITextFieldDesignableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldDesignableExtension.swift; sourceTree = "<group>"; };
+		C020BB1D2AC0B27D00591D17 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		C020BB222AC0B41F00591D17 /* Gilroy-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ExtraBold.otf"; sourceTree = "<group>"; };
+		C020BB232AC0B41F00591D17 /* Gilroy-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Light.otf"; sourceTree = "<group>"; };
+		C05C86352AC119700040D850 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C05C86372AC119F30040D850 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		C05C86392AC11EC90040D850 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		C05C863E2AC138350040D850 /* Credentials.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Credentials.xcdatamodel; sourceTree = "<group>"; };
+		C05C86402AC138890040D850 /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
+		C05C86422AC13C3D0040D850 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		C05C86462AC166120040D850 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		C09262832AC28F2900D6A921 /* Fontspring-DEMO-proximanovacond-lightit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovacond-lightit.otf"; sourceTree = "<group>"; };
+		C09262842AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovaexcn-regular.otf"; sourceTree = "<group>"; };
+		C09262852AC28F2900D6A921 /* Fontspring-DEMO-proximanova-thinit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanova-thinit.otf"; sourceTree = "<group>"; };
+		C09262862AC28F2900D6A921 /* Fontspring-DEMO-proximanovacond-boldit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovacond-boldit.otf"; sourceTree = "<group>"; };
+		C09262872AC28F2900D6A921 /* Fontspring-DEMO-proximanova-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanova-bold.otf"; sourceTree = "<group>"; };
+		C09262882AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-mediumit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovaexcn-mediumit.otf"; sourceTree = "<group>"; };
+		C09262892AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovaexcn-bold.otf"; sourceTree = "<group>"; };
+		C092628A2AC28F2900D6A921 /* Fontspring-DEMO-proximanovacond-extrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovacond-extrabold.otf"; sourceTree = "<group>"; };
+		C092628B2AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-extrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovaexcn-extrabold.otf"; sourceTree = "<group>"; };
+		C092628C2AC28F2900D6A921 /* Fontspring-DEMO-proximanovacond-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovacond-bold.otf"; sourceTree = "<group>"; };
+		C092628D2AC28F2900D6A921 /* Fontspring-DEMO-proximanova-mediumit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanova-mediumit.otf"; sourceTree = "<group>"; };
+		C092628E2AC28F2900D6A921 /* Fontspring-DEMO-proximanovacond-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovacond-medium.otf"; sourceTree = "<group>"; };
+		C092628F2AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-extraboldit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovaexcn-extraboldit.otf"; sourceTree = "<group>"; };
+		C09262902AC28F2900D6A921 /* Fontspring-DEMO-proximanova-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanova-medium.otf"; sourceTree = "<group>"; };
+		C09262912AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-semiboldit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovaexcn-semiboldit.otf"; sourceTree = "<group>"; };
+		C09262922AC28F2900D6A921 /* Fontspring-DEMO-proximanova-semiboldit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanova-semiboldit.otf"; sourceTree = "<group>"; };
+		C09262932AC28F2900D6A921 /* Fontspring-DEMO-proximanovacond-extraboldit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovacond-extraboldit.otf"; sourceTree = "<group>"; };
+		C09262942AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-regularit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovaexcn-regularit.otf"; sourceTree = "<group>"; };
+		C09262952AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovaexcn-thin.otf"; sourceTree = "<group>"; };
+		C09262962AC28F2900D6A921 /* proximanova-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proximanova-regular.otf"; sourceTree = "<group>"; };
+		C09262972AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-thinit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovaexcn-thinit.otf"; sourceTree = "<group>"; };
+		C09262982AC28F2900D6A921 /* Fontspring-DEMO-proximanovacond-black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovacond-black.otf"; sourceTree = "<group>"; };
+		C09262992AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovaexcn-semibold.otf"; sourceTree = "<group>"; };
+		C092629A2AC28F2A00D6A921 /* Fontspring-DEMO-proximanovacond-semiboldit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovacond-semiboldit.otf"; sourceTree = "<group>"; };
+		C092629B2AC28F2A00D6A921 /* Fontspring-DEMO-proximanova-thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanova-thin.otf"; sourceTree = "<group>"; };
+		C092629C2AC28F2A00D6A921 /* proximanova-semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proximanova-semibold.otf"; sourceTree = "<group>"; };
+		C092629D2AC28F2A00D6A921 /* Fontspring-DEMO-proximanovacond-thinit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovacond-thinit.otf"; sourceTree = "<group>"; };
+		C092629E2AC28F2A00D6A921 /* Fontspring-DEMO-proximanova-regularit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanova-regularit.otf"; sourceTree = "<group>"; };
+		C092629F2AC28F2A00D6A921 /* Fontspring-DEMO-proximanovaexcn-blackit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovaexcn-blackit.otf"; sourceTree = "<group>"; };
+		C09262A02AC28F2A00D6A921 /* Fontspring-DEMO-proximanovacond-thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovacond-thin.otf"; sourceTree = "<group>"; };
+		C09262A12AC28F2A00D6A921 /* Fontspring-DEMO-proximanovaexcn-lightit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovaexcn-lightit.otf"; sourceTree = "<group>"; };
+		C09262A22AC28F2A00D6A921 /* Fontspring-DEMO-proximanovacond-regularit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovacond-regularit.otf"; sourceTree = "<group>"; };
+		C09262A32AC28F2A00D6A921 /* Fontspring-DEMO-proximanova-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanova-light.otf"; sourceTree = "<group>"; };
+		C09262A42AC28F2A00D6A921 /* Fontspring-DEMO-proximanovaexcn-boldit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovaexcn-boldit.otf"; sourceTree = "<group>"; };
+		C09262A52AC28F2A00D6A921 /* Fontspring-DEMO-proximanovacond-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovacond-light.otf"; sourceTree = "<group>"; };
+		C09262A62AC28F2A00D6A921 /* Fontspring-DEMO-proximanova-black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanova-black.otf"; sourceTree = "<group>"; };
+		C09262A72AC28F2A00D6A921 /* Fontspring-DEMO-proximanova-blackit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanova-blackit.otf"; sourceTree = "<group>"; };
+		C09262A82AC28F2A00D6A921 /* Fontspring-DEMO-proximanova-extrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanova-extrabold.otf"; sourceTree = "<group>"; };
+		C09262A92AC28F2A00D6A921 /* Fontspring-DEMO-proximanova-extraboldit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanova-extraboldit.otf"; sourceTree = "<group>"; };
+		C09262AA2AC28F2A00D6A921 /* Fontspring-DEMO-proximanovacond-mediumit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovacond-mediumit.otf"; sourceTree = "<group>"; };
+		C09262AB2AC28F2A00D6A921 /* Fontspring-DEMO-proximanovacond-blackit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovacond-blackit.otf"; sourceTree = "<group>"; };
+		C09262AC2AC28F2A00D6A921 /* Fontspring-DEMO-proximanovacond-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovacond-regular.otf"; sourceTree = "<group>"; };
+		C09262AD2AC28F2A00D6A921 /* Fontspring-DEMO-proximanovacond-semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovacond-semibold.otf"; sourceTree = "<group>"; };
+		C09262AE2AC28F2A00D6A921 /* Fontspring-DEMO-proximanova-boldit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanova-boldit.otf"; sourceTree = "<group>"; };
+		C09262AF2AC28F2A00D6A921 /* Fontspring-DEMO-proximanovaexcn-black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovaexcn-black.otf"; sourceTree = "<group>"; };
+		C09262B02AC28F2A00D6A921 /* Fontspring-DEMO-proximanovaexcn-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovaexcn-light.otf"; sourceTree = "<group>"; };
+		C09262B12AC28F2A00D6A921 /* Fontspring-DEMO-proximanovaexcn-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanovaexcn-medium.otf"; sourceTree = "<group>"; };
+		C09262B22AC28F2A00D6A921 /* Fontspring-DEMO-proximanova-lightit.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-proximanova-lightit.otf"; sourceTree = "<group>"; };
+		C09262B32AC293C600D6A921 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		C09262B52AC293D000D6A921 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C0C47E922AC3F6D100C86E34 /* ProductCategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoriesTableViewCell.swift; sourceTree = "<group>"; };
+		C0C47E942AC3F71A00C86E34 /* ProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewCell.swift; sourceTree = "<group>"; };
+		C0C47E962AC404B400C86E34 /* ServiceCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		C0C47E982AC405D100C86E34 /* ServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C01173CA2AC0055300FA490F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C01173C42AC0055300FA490F = {
+			isa = PBXGroup;
+			children = (
+				C01173CF2AC0055300FA490F /* Healt Care */,
+				C01173CE2AC0055300FA490F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C01173CE2AC0055300FA490F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C01173CD2AC0055300FA490F /* Healt Care.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C01173CF2AC0055300FA490F /* Healt Care */ = {
+			isa = PBXGroup;
+			children = (
+				C05C86342AC119340040D850 /* Provider */,
+				C020BB212AC0B40D00591D17 /* Font */,
+				C01173FA2AC021DF00FA490F /* Extension */,
+				C01173EE2AC0061500FA490F /* Model */,
+				C01173E52AC0057000FA490F /* Presentation */,
+				C01173D02AC0055300FA490F /* AppDelegate.swift */,
+				C01173D22AC0055300FA490F /* SceneDelegate.swift */,
+				C01173D42AC0055300FA490F /* ViewController.swift */,
+				C01173D92AC0055500FA490F /* Assets.xcassets */,
+				C01173DB2AC0055500FA490F /* LaunchScreen.storyboard */,
+				C01173DE2AC0055500FA490F /* Info.plist */,
+			);
+			path = "Healt Care";
+			sourceTree = "<group>";
+		};
+		C01173E52AC0057000FA490F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C01173EB2AC005E500FA490F /* Menu */,
+				C01173EA2AC005E100FA490F /* Profile */,
+				C01173E92AC005D100FA490F /* Home */,
+				C01173E82AC005C400FA490F /* Register */,
+				C01173E62AC005B800FA490F /* Login */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C01173E62AC005B800FA490F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C01173ED2AC0060400FA490F /* ViewModel */,
+				C01173EC2AC0060000FA490F /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C01173E82AC005C400FA490F /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				C01173F52AC01EF300FA490F /* ViewModel */,
+				C01173F42AC01EEE00FA490F /* View */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		C01173E92AC005D100FA490F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C01173FE2AC02E7600FA490F /* ViewModel */,
+				C01173FD2AC02E7200FA490F /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C01173EA2AC005E100FA490F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C020BB122AC08AA300591D17 /* View */,
+				C020BB112AC08A9E00591D17 /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C01173EB2AC005E500FA490F /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				C09262B82AC293DE00D6A921 /* ViewModel */,
+				C09262B72AC293D300D6A921 /* View */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		C01173EC2AC0060000FA490F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C01173EF2AC0062600FA490F /* LoginViewController.swift */,
+				C01173F12AC0063500FA490F /* Login.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C01173ED2AC0060400FA490F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C05C86352AC119700040D850 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C01173EE2AC0061500FA490F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C020BAFB2AC0873A00591D17 /* ProductCategories.swift */,
+				C020BAFD2AC0876100591D17 /* Product.swift */,
+				C020BAFF2AC0883300591D17 /* ServiceCategories.swift */,
+				C020BB012AC0885A00591D17 /* Service.swift */,
+				C05C86392AC11EC90040D850 /* Login.swift */,
+				C05C86422AC13C3D0040D850 /* Credential.swift */,
+				C05C86462AC166120040D850 /* ErrorMessage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C01173F42AC01EEE00FA490F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C01173F62AC01F0100FA490F /* Register.storyboard */,
+				C01173F82AC01F2D00FA490F /* RegisterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C01173F52AC01EF300FA490F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C01173FA2AC021DF00FA490F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C020BB1C2AC0A96500591D17 /* Designable */,
+				C01173FB2AC021F300FA490F /* UIStoryboardExtension.swift */,
+				C020BB172AC09D7D00591D17 /* UIViewExtension.swift */,
+				C020BB1D2AC0B27D00591D17 /* UIColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C01173FD2AC02E7200FA490F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C020BB032AC088ED00591D17 /* Cell */,
+				C01173FF2AC02E8700FA490F /* HomeViewController.swift */,
+				C01174012AC02E9000FA490F /* Home.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C01173FE2AC02E7600FA490F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C020BAF92AC0866A00591D17 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C020BB032AC088ED00591D17 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C020BB082AC0892100591D17 /* Service */,
+				C020BB072AC0891900591D17 /* ServiceCategories */,
+				C020BB062AC0891300591D17 /* Product */,
+				C020BB042AC088FC00591D17 /* ProductCategories */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C020BB042AC088FC00591D17 /* ProductCategories */ = {
+			isa = PBXGroup;
+			children = (
+				C020BB092AC0895900591D17 /* ProductCategoriesCollectionViewCell.swift */,
+				C0C47E922AC3F6D100C86E34 /* ProductCategoriesTableViewCell.swift */,
+			);
+			path = ProductCategories;
+			sourceTree = "<group>";
+		};
+		C020BB062AC0891300591D17 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				C020BB0B2AC0896B00591D17 /* ProductCollectionViewCell.swift */,
+				C0C47E942AC3F71A00C86E34 /* ProductsTableViewCell.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		C020BB072AC0891900591D17 /* ServiceCategories */ = {
+			isa = PBXGroup;
+			children = (
+				C020BB0D2AC0898300591D17 /* ServiceCategoriesCollectionViewCell.swift */,
+				C0C47E962AC404B400C86E34 /* ServiceCategoryTableViewCell.swift */,
+			);
+			path = ServiceCategories;
+			sourceTree = "<group>";
+		};
+		C020BB082AC0892100591D17 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C020BB0F2AC0898F00591D17 /* ServiceTableViewCell.swift */,
+				C0C47E982AC405D100C86E34 /* ServiceCollectionViewCell.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C020BB112AC08A9E00591D17 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C020BB122AC08AA300591D17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C020BB132AC08AF400591D17 /* Profile.storyboard */,
+				C020BB152AC0982200591D17 /* ProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C020BB1C2AC0A96500591D17 /* Designable */ = {
+			isa = PBXGroup;
+			children = (
+				C020BB192AC0A86E00591D17 /* UITextFieldDesignableExtension.swift */,
+			);
+			path = Designable;
+			sourceTree = "<group>";
+		};
+		C020BB212AC0B40D00591D17 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				C09262822AC28F1D00D6A921 /* Proxima Nova */,
+				C09262812AC28F1300D6A921 /* Gilroy */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		C05C86342AC119340040D850 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				C05C863C2AC1380D0040D850 /* CoreData */,
+				C05C863B2AC138050040D850 /* Api */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		C05C863B2AC138050040D850 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				C05C86372AC119F30040D850 /* ApiService.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		C05C863C2AC1380D0040D850 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C05C863D2AC138350040D850 /* Credentials.xcdatamodeld */,
+				C05C86402AC138890040D850 /* PersistanceManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		C09262812AC28F1300D6A921 /* Gilroy */ = {
+			isa = PBXGroup;
+			children = (
+				C020BB222AC0B41F00591D17 /* Gilroy-ExtraBold.otf */,
+				C020BB232AC0B41F00591D17 /* Gilroy-Light.otf */,
+			);
+			path = Gilroy;
+			sourceTree = "<group>";
+		};
+		C09262822AC28F1D00D6A921 /* Proxima Nova */ = {
+			isa = PBXGroup;
+			children = (
+				C09262A62AC28F2A00D6A921 /* Fontspring-DEMO-proximanova-black.otf */,
+				C09262A72AC28F2A00D6A921 /* Fontspring-DEMO-proximanova-blackit.otf */,
+				C09262872AC28F2900D6A921 /* Fontspring-DEMO-proximanova-bold.otf */,
+				C09262AE2AC28F2A00D6A921 /* Fontspring-DEMO-proximanova-boldit.otf */,
+				C09262A82AC28F2A00D6A921 /* Fontspring-DEMO-proximanova-extrabold.otf */,
+				C09262A92AC28F2A00D6A921 /* Fontspring-DEMO-proximanova-extraboldit.otf */,
+				C09262A32AC28F2A00D6A921 /* Fontspring-DEMO-proximanova-light.otf */,
+				C09262B22AC28F2A00D6A921 /* Fontspring-DEMO-proximanova-lightit.otf */,
+				C09262902AC28F2900D6A921 /* Fontspring-DEMO-proximanova-medium.otf */,
+				C092628D2AC28F2900D6A921 /* Fontspring-DEMO-proximanova-mediumit.otf */,
+				C09262962AC28F2900D6A921 /* proximanova-regular.otf */,
+				C092629E2AC28F2A00D6A921 /* Fontspring-DEMO-proximanova-regularit.otf */,
+				C092629C2AC28F2A00D6A921 /* proximanova-semibold.otf */,
+				C09262922AC28F2900D6A921 /* Fontspring-DEMO-proximanova-semiboldit.otf */,
+				C092629B2AC28F2A00D6A921 /* Fontspring-DEMO-proximanova-thin.otf */,
+				C09262852AC28F2900D6A921 /* Fontspring-DEMO-proximanova-thinit.otf */,
+				C09262982AC28F2900D6A921 /* Fontspring-DEMO-proximanovacond-black.otf */,
+				C09262AB2AC28F2A00D6A921 /* Fontspring-DEMO-proximanovacond-blackit.otf */,
+				C092628C2AC28F2900D6A921 /* Fontspring-DEMO-proximanovacond-bold.otf */,
+				C09262862AC28F2900D6A921 /* Fontspring-DEMO-proximanovacond-boldit.otf */,
+				C092628A2AC28F2900D6A921 /* Fontspring-DEMO-proximanovacond-extrabold.otf */,
+				C09262932AC28F2900D6A921 /* Fontspring-DEMO-proximanovacond-extraboldit.otf */,
+				C09262A52AC28F2A00D6A921 /* Fontspring-DEMO-proximanovacond-light.otf */,
+				C09262832AC28F2900D6A921 /* Fontspring-DEMO-proximanovacond-lightit.otf */,
+				C092628E2AC28F2900D6A921 /* Fontspring-DEMO-proximanovacond-medium.otf */,
+				C09262AA2AC28F2A00D6A921 /* Fontspring-DEMO-proximanovacond-mediumit.otf */,
+				C09262AC2AC28F2A00D6A921 /* Fontspring-DEMO-proximanovacond-regular.otf */,
+				C09262A22AC28F2A00D6A921 /* Fontspring-DEMO-proximanovacond-regularit.otf */,
+				C09262AD2AC28F2A00D6A921 /* Fontspring-DEMO-proximanovacond-semibold.otf */,
+				C092629A2AC28F2A00D6A921 /* Fontspring-DEMO-proximanovacond-semiboldit.otf */,
+				C09262A02AC28F2A00D6A921 /* Fontspring-DEMO-proximanovacond-thin.otf */,
+				C092629D2AC28F2A00D6A921 /* Fontspring-DEMO-proximanovacond-thinit.otf */,
+				C09262AF2AC28F2A00D6A921 /* Fontspring-DEMO-proximanovaexcn-black.otf */,
+				C092629F2AC28F2A00D6A921 /* Fontspring-DEMO-proximanovaexcn-blackit.otf */,
+				C09262892AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-bold.otf */,
+				C09262A42AC28F2A00D6A921 /* Fontspring-DEMO-proximanovaexcn-boldit.otf */,
+				C092628B2AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-extrabold.otf */,
+				C092628F2AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-extraboldit.otf */,
+				C09262B02AC28F2A00D6A921 /* Fontspring-DEMO-proximanovaexcn-light.otf */,
+				C09262A12AC28F2A00D6A921 /* Fontspring-DEMO-proximanovaexcn-lightit.otf */,
+				C09262B12AC28F2A00D6A921 /* Fontspring-DEMO-proximanovaexcn-medium.otf */,
+				C09262882AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-mediumit.otf */,
+				C09262842AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-regular.otf */,
+				C09262942AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-regularit.otf */,
+				C09262992AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-semibold.otf */,
+				C09262912AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-semiboldit.otf */,
+				C09262952AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-thin.otf */,
+				C09262972AC28F2900D6A921 /* Fontspring-DEMO-proximanovaexcn-thinit.otf */,
+			);
+			path = "Proxima Nova";
+			sourceTree = "<group>";
+		};
+		C09262B72AC293D300D6A921 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C09262B32AC293C600D6A921 /* Menu.storyboard */,
+				C09262B52AC293D000D6A921 /* MenuViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C09262B82AC293DE00D6A921 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C01173CC2AC0055300FA490F /* Healt Care */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01173E12AC0055500FA490F /* Build configuration list for PBXNativeTarget "Healt Care" */;
+			buildPhases = (
+				C01173C92AC0055300FA490F /* Sources */,
+				C01173CA2AC0055300FA490F /* Frameworks */,
+				C01173CB2AC0055300FA490F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Healt Care";
+			productName = "Healt Care";
+			productReference = C01173CD2AC0055300FA490F /* Healt Care.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C01173C52AC0055300FA490F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C01173CC2AC0055300FA490F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = C01173C82AC0055300FA490F /* Build configuration list for PBXProject "Healt Care" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C01173C42AC0055300FA490F;
+			productRefGroup = C01173CE2AC0055300FA490F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C01173CC2AC0055300FA490F /* Healt Care */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C01173CB2AC0055300FA490F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01173DD2AC0055500FA490F /* LaunchScreen.storyboard in Resources */,
+				C01173F22AC0063500FA490F /* Login.storyboard in Resources */,
+				C020BB242AC0B44200591D17 /* Gilroy-Light.otf in Resources */,
+				C09262B42AC293C600D6A921 /* Menu.storyboard in Resources */,
+				C01173DA2AC0055500FA490F /* Assets.xcassets in Resources */,
+				C01174022AC02E9000FA490F /* Home.storyboard in Resources */,
+				C020BB252AC0B44400591D17 /* Gilroy-ExtraBold.otf in Resources */,
+				C020BB142AC08AF400591D17 /* Profile.storyboard in Resources */,
+				C01173F72AC01F0100FA490F /* Register.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C01173C92AC0055300FA490F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01173F02AC0062600FA490F /* LoginViewController.swift in Sources */,
+				C01173F92AC01F2D00FA490F /* RegisterViewController.swift in Sources */,
+				C020BB102AC0898F00591D17 /* ServiceTableViewCell.swift in Sources */,
+				C09262B62AC293D000D6A921 /* MenuViewController.swift in Sources */,
+				C0C47E932AC3F6D100C86E34 /* ProductCategoriesTableViewCell.swift in Sources */,
+				C020BB0C2AC0896B00591D17 /* ProductCollectionViewCell.swift in Sources */,
+				C01173D52AC0055300FA490F /* ViewController.swift in Sources */,
+				C020BAFA2AC0866A00591D17 /* HomeViewModel.swift in Sources */,
+				C05C86382AC119F30040D850 /* ApiService.swift in Sources */,
+				C05C86472AC166120040D850 /* ErrorMessage.swift in Sources */,
+				C020BAFC2AC0873A00591D17 /* ProductCategories.swift in Sources */,
+				C020BB1E2AC0B27D00591D17 /* UIColorExtension.swift in Sources */,
+				C020BB162AC0982200591D17 /* ProfileViewController.swift in Sources */,
+				C020BB022AC0885A00591D17 /* Service.swift in Sources */,
+				C05C86432AC13C3D0040D850 /* Credential.swift in Sources */,
+				C01173D12AC0055300FA490F /* AppDelegate.swift in Sources */,
+				C01173FC2AC021F300FA490F /* UIStoryboardExtension.swift in Sources */,
+				C020BB002AC0883300591D17 /* ServiceCategories.swift in Sources */,
+				C0C47E992AC405D100C86E34 /* ServiceCollectionViewCell.swift in Sources */,
+				C05C863F2AC138350040D850 /* Credentials.xcdatamodeld in Sources */,
+				C020BB1A2AC0A86E00591D17 /* UITextFieldDesignableExtension.swift in Sources */,
+				C020BB0A2AC0895900591D17 /* ProductCategoriesCollectionViewCell.swift in Sources */,
+				C0C47E952AC3F71A00C86E34 /* ProductsTableViewCell.swift in Sources */,
+				C020BAFE2AC0876100591D17 /* Product.swift in Sources */,
+				C05C863A2AC11EC90040D850 /* Login.swift in Sources */,
+				C020BB0E2AC0898300591D17 /* ServiceCategoriesCollectionViewCell.swift in Sources */,
+				C0C47E972AC404B400C86E34 /* ServiceCategoryTableViewCell.swift in Sources */,
+				C05C86412AC138890040D850 /* PersistanceManager.swift in Sources */,
+				C01174002AC02E8700FA490F /* HomeViewController.swift in Sources */,
+				C020BB182AC09D7D00591D17 /* UIViewExtension.swift in Sources */,
+				C01173D32AC0055300FA490F /* SceneDelegate.swift in Sources */,
+				C05C86362AC119700040D850 /* LoginViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C01173DB2AC0055500FA490F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C01173DC2AC0055500FA490F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01173DF2AC0055500FA490F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C01173E02AC0055500FA490F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01173E22AC0055500FA490F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J7K2J83XY8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Healt Care/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gilang.Healt-Care";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C01173E32AC0055500FA490F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J7K2J83XY8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Healt Care/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gilang.Healt-Care";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01173C82AC0055300FA490F /* Build configuration list for PBXProject "Healt Care" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01173DF2AC0055500FA490F /* Debug */,
+				C01173E02AC0055500FA490F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01173E12AC0055500FA490F /* Build configuration list for PBXNativeTarget "Healt Care" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01173E22AC0055500FA490F /* Debug */,
+				C01173E32AC0055500FA490F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C05C863D2AC138350040D850 /* Credentials.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C05C863E2AC138350040D850 /* Credentials.xcdatamodel */,
+			);
+			currentVersion = C05C863E2AC138350040D850 /* Credentials.xcdatamodel */;
+			path = Credentials.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C01173C52AC0055300FA490F /* Project object */;
+}
